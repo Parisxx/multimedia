@@ -20,18 +20,10 @@ include("functions.php");
         <h1 class="title">Mediafyr</h1>
     </div>
 
-    <button class="button"> Add </button>
+    <a href="add.php" class="button"> Add </a>
 
     <div class="content1">
         <p class="text"> Songs </p>
-    </div>
-
-    <div class="content2">
-        <p class="text"> Films </p>
-    </div>
-    
-    <div class="content3">
-        <p class="text"> Books </p>
         <?php
            $sql = "SELECT * FROM watchlist";
            $result = $conn->query($sql);
@@ -41,10 +33,25 @@ include("functions.php");
         echo "<h1>" . $row['title'] . " - " . $row['maker'] . " </h1>";
         echo "<h3>" . $row['platform'] . "</h3>";
         echo "<p>" . $row['review'] . "</p>";
-        echo "<p>" . $row['media'] . "</p>";
+        echo "<a href='" . $row['link'] ."'>";
+        echo "<img src='" . $row['photo']."' height='200px' width='150px'>";
+        echo "</a>";
+        echo "<p> Listened:";
+        echo "<input type='radio' name='seen' value='yes'>yes</input>";
+        echo "<input type='radio' name='seen' value='no'>no</input>";
         echo "</div>";
            }
         ?>
+    </div>
+
+    <div class="content2">
+        <p class="text"> Films </p>
+        
+    </div>
+    
+    <div class="content3">
+        <p class="text"> Books </p>
+     
     </div>
 
 

@@ -28,7 +28,15 @@ include("functions.php");
            $sql = "SELECT * FROM watchlist WHERE media_type= '2'";
            $result = $conn->query($sql);
            while($row = $result->fetch(PDO::FETCH_ASSOC)){
+$name = mysql_query("SELECT * FROM $alias WHERE FBID=$user") or die ('Error: '.mysql_error ());
+while($row = mysql_fetch_array($name))
+{
+  $queried_name = $row['name'];
+  echo 'Name: ' . $queried_name;
 
+  //optionally just do
+  //echo 'Name: ' . $row['name'];
+}
         echo "<div class='carts'>";
         echo "<h1>" . $row['title'] . " - " . $row['maker'] . " </h1>";
         echo "<h3>" . $row['platform'] . "</h3>";

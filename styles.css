@@ -8,6 +8,8 @@ body {
    margin-top: -2.5%;
    margin-left: -1.5%;
    margin-right: -0.5%;
+   background-image: url("photos/fire.png");
+   background-size: cover;
 }
 
 .title {

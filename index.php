@@ -29,6 +29,7 @@ include("functions.php");
            $sql = "SELECT * FROM watchlist WHERE media_type= '2'";
            $result = $conn->query($sql);
            while($row = $result->fetch(PDO::FETCH_ASSOC)){
+            $watched = $row['watched'];
 
         echo "<div class='carts'>";
         echo "<h1>" . $row['title'] . " - " . $row['maker'] . " </h1>";
@@ -37,22 +38,18 @@ include("functions.php");
         echo "<a target='_blank' href='" . $row['link'] ."'>";
         echo "<img src='" . $row['photo']."' height='200px' width='200px'>";
         echo "</a>";
-        echo "<p> Listened:";
-        echo "<input type='radio' name='seen' value='yes'>yes</input>";
-        echo "<input type='radio' name='seen' value='no'>no</input>";
+        echo "<p> Listened: &nbsp";   
 
-
-        /*if (condition) {
-            code to be executed if condition is true;
-          } else {
-            code to be executed if condition is false;
-          } */
-
-
+        if ($watched == "0"){
+            echo"<td>Yes</td>";
+        } else {
+            echo "<td>No</td>";
+        }
         echo "</div>";
-           }
+        }
         ?>
     </div>
+
 
     <div class="content2">
         <p class="text"> Films </p>
@@ -60,6 +57,7 @@ include("functions.php");
            $sql = "SELECT * FROM watchlist WHERE media_type= '3'";
            $result = $conn->query($sql);
            while($row = $result->fetch(PDO::FETCH_ASSOC)){
+            $watched = $row['watched'];
 
         echo "<div class='carts'>";
         echo "<h1>" . $row['title'] . " - " . $row['maker'] . " </h1>";
@@ -68,39 +66,58 @@ include("functions.php");
         echo "<a target='_blank' href='" . $row['link'] ."'>";
         echo "<img src='" . $row['photo']."' height='200px' width='150px'>";
         echo "</a>";
-        echo "<p> Watched:";
-        echo "<input type='radio' name='seen' value='yes'>yes</input>";
-        echo "<input type='radio' name='seen' value='no'>no</input>";
-        echo "</div>";
-           }
-        ?>
+        echo "<p> Seen: &nbsp";   
 
+        if ($watched == "0"){
+            echo"<td>Yes</td>";
+        } else {
+            echo "<td>No</td>";
+        }
+        echo "</div>";
+        }
+        ?>
     </div>
 
+
+    
     <div class="content3">
         <p class="text"> Books </p>
         <?php
            $sql = "SELECT * FROM watchlist WHERE media_type= '1'";
            $result = $conn->query($sql);
            while($row = $result->fetch(PDO::FETCH_ASSOC)){
+            $watched = $row['watched'];
 
         echo "<div class='carts'>";
         echo "<h1>" . $row['title'] . " - " . $row['maker'] . " </h1>";
         echo "<h3>" . $row['platform'] . "</h3>";
         echo "<p>" . $row['review'] . "</p>";
-        echo "<a target='_blank'  href='" . $row['link'] ."'>";
+        echo "<a target='_blank' href='" . $row['link'] ."'>";
         echo "<img src='" . $row['photo']."' height='200px' width='150px'>";
         echo "</a>";
-        echo "<p> Read:";
-        echo "<input type='radio' name='seen' value='yes'>yes</input>";
-        echo "<input type='radio' name='seen' value='no'>no</input>";
-        echo "</div>";
-           }
-        ?>
+        echo "<p> Read: &nbsp";   
 
+        if ($watched == "0"){
+            echo"<td>Yes</td>";
+        } else {
+            echo "<td>No</td>";
+        }
+        echo "</div>";
+        }
+        ?>
     </div>
 
 
 </body>
 
 </html>
+
+
+
+<!-- 
+TO DO
+-scroll bar
+-add page insert data with database and php
+-edit button index
+-edit page update data with database and php 
+-->

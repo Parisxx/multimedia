@@ -4,39 +4,43 @@ body {
 }
 
 .header {
-   background-color: #F7FE74;
-   margin-top: -2.5%;
-   margin-left: -1.5%;
-   margin-right: -0.5%;
-   background-image: url("photos/fire.png");
-   background-size: cover;
+    background-color: #F7FE74;
+    margin-top: -2.5%;
+    margin-left: -1.5%;
+    margin-right: -0.5%;
+    background-image: url("photos/fire.png");
+    background-size: cover;
 }
 
 .title {
-  text-align: center;
-  padding: 5%;
-  font-size: 50px;
+    text-align: center;
+    padding: 5%;
+    font-size: 50px;
 }
 
-.button{
-  background-color: #C11313;
-  color:#FFFFFF;
-  padding: 0.5%;
-  width: 100px;
-  margin-top: -5%;
-  margin-left: 1%;
-  text-decoration: none;
+.button {
+    background-color: #C11313;
+    color: #FFFFFF;
+    padding: 0.5%;
+    width: 200px;
+    margin-top: -5%;
+    margin-left: 1%;
+    text-decoration: none;
+}
+
+.button:hover {
+    padding: 0.8%;
 }
 
 
 .content1 {
     background-color: #656565;
     padding: 1%;
-    margin-top: 3%;
+    margin-top: 2%;
     margin-bottom: 3%;
 
     overflow-x: scroll;
-    display: flex; 
+    display: flex;
 
 
 }
@@ -54,6 +58,7 @@ body {
     background-color: #656565;
     padding: 1%;
     margin-bottom: 3%;
+    
 }
 
 
@@ -65,7 +70,7 @@ body {
 }
 
 .text {
-    color:#FFFFFF;
+    color: #FFFFFF;
 
 }
 
@@ -86,3 +91,39 @@ body {
     margin-right: 20%;
 }
 
+.button2 {
+    background-color: #C11313;
+    color: #FFFFFF;
+    padding: 0.5%;
+    width: 100px;
+    margin-top: -5%;
+    margin-left: 1%;
+    border: none;
+}
+
+.button2:hover {
+   padding: 0.8%;
+   width: 120px;
+}
+
+
+input {
+    border: none;
+}
+
+textarea{
+    border: none;
+    resize: none
+}
+
+select{
+    border: none;
+}
+
+#review {
+    height: 50px;
+}
+
+#link{
+    width: 250px;
+}

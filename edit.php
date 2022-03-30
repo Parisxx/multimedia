@@ -20,12 +20,12 @@ include("functions.php");
         <h1 class="title">Mediafyr</h1>
     </div>
 
-    <a href="index.php" class="button"> Home </a>
+    <a href="index.php" class="button"> Back </a>
 
     <div class="content4">
 
     <div class="content5">
-        <h1>Add a book/film/song </h1>
+        <!-- <h1>Add a book/film/song </h1>
         <form class="form" action="/add.php" method="get">
             <label for="title">Title:</label>
             <input type="text" name="title" required autofocus>
@@ -64,7 +64,7 @@ include("functions.php");
             <button class="button2" name="confirm" type="button">Confirm</button>
            
 
-        </form>
+        </form> -->
 </div>
     </div>
 

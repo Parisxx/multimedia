@@ -24,7 +24,7 @@ include("functions.php");
 
     <div class="content">
 
-        <form>
+        <form class="form">
             <label for="title">Title:</label>
             <input type="text" name="title">
             <label for="maker">Maker:</label>

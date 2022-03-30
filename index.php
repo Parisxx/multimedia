@@ -33,8 +33,8 @@ include("functions.php");
         echo "<h1>" . $row['title'] . " - " . $row['maker'] . " </h1>";
         echo "<h3>" . $row['platform'] . "</h3>";
         echo "<p>" . $row['review'] . "</p>";
-        echo "<a href='" . $row['link'] ."'>";
-        echo "<img src='" . $row['photo']."' height='200px' width='150px'>";
+        echo "<a target='_blank' href='" . $row['link'] ."'>";
+        echo "<img src='" . $row['photo']."' height='200px' width='200px'>";
         echo "</a>";
         echo "<p> Listened:";
         echo "<input type='radio' name='seen' value='yes'>yes</input>";
@@ -55,7 +55,7 @@ include("functions.php");
         echo "<h1>" . $row['title'] . " - " . $row['maker'] . " </h1>";
         echo "<h3>" . $row['platform'] . "</h3>";
         echo "<p>" . $row['review'] . "</p>";
-        echo "<a href='" . $row['link'] ."'>";
+        echo "<a target='_blank' href='" . $row['link'] ."'>";
         echo "<img src='" . $row['photo']."' height='200px' width='150px'>";
         echo "</a>";
         echo "<p> Watched:";
@@ -64,9 +64,9 @@ include("functions.php");
         echo "</div>";
            }
         ?>
-        
+
     </div>
-    
+
     <div class="content3">
         <p class="text"> Books </p>
         <?php
@@ -78,7 +78,7 @@ include("functions.php");
         echo "<h1>" . $row['title'] . " - " . $row['maker'] . " </h1>";
         echo "<h3>" . $row['platform'] . "</h3>";
         echo "<p>" . $row['review'] . "</p>";
-        echo "<a href='" . $row['link'] ."'>";
+        echo "<a target='_blank'  href='" . $row['link'] ."'>";
         echo "<img src='" . $row['photo']."' height='200px' width='150px'>";
         echo "</a>";
         echo "<p> Read:";
@@ -87,7 +87,7 @@ include("functions.php");
         echo "</div>";
            }
         ?>
-     
+
     </div>
 
 

@@ -35,6 +35,19 @@ font-size: 50px;
     margin-top: 3%;
     margin-bottom: 3%;
 
+    overflow-x: scroll;
+    display: flex; 
+    height: 550px;
+    width: 1470px;
+
+}
+
+.carts {
+    margin-left: 1%;
+    background-color: #D2D1D1;
+    display: inline-block;
+    padding: 1%;
+    width: 300px;
 }
 
 
@@ -42,7 +55,6 @@ font-size: 50px;
     background-color: #656565;
     padding: 1%;
     margin-bottom: 3%;
-
 }
 
 
@@ -55,12 +67,14 @@ font-size: 50px;
 
 .text {
     color:#FFFFFF;
+
 }
 
-.carts {
-    margin-left: 1%;
-    background-color: #D2D1D1;
-    display: inline-block;
+
+.content {
+    background-color: #656565;
     padding: 1%;
+    margin-bottom: 3%;
+    margin-top: 2%;
 }
 

@@ -8,6 +8,8 @@ body {
    margin-top: -2.5%;
    margin-left: -1.5%;
    margin-right: -0.5%;
+   background-image: url("photos/fire.png");
+   background-size: cover;
 }
 
 .title {
@@ -17,13 +19,13 @@ font-size: 50px;
 }
 
 .button{
-  border: none;
   background-color: #C11313;
   color:#FFFFFF;
   padding: 0.5%;
-  width: 8%;
+  width: 100px;
   margin-top: -5%;
   margin-left: 1%;
+  text-decoration: none;
 }
 
 
@@ -61,3 +63,4 @@ font-size: 50px;
     display: inline-block;
     padding: 1%;
 }
+

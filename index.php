@@ -22,6 +22,7 @@ include("functions.php");
 
     <a href="add.php" class="button"> Add </a>
 
+
     <div class="content1">
         <p class="text"> Songs </p>
         <?php
@@ -39,6 +40,15 @@ include("functions.php");
         echo "<p> Listened:";
         echo "<input type='radio' name='seen' value='yes'>yes</input>";
         echo "<input type='radio' name='seen' value='no'>no</input>";
+
+
+        /*if (condition) {
+            code to be executed if condition is true;
+          } else {
+            code to be executed if condition is false;
+          } */
+
+
         echo "</div>";
            }
         ?>

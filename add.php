@@ -22,7 +22,9 @@ include("functions.php");
 
     <a href="index.php" class="button"> Home </a>
 
-    <div class="content">
+    <div class="content4">
+
+    <div class="content5">
 
         <form class="form">
             <label for="title">Title:</label>
@@ -61,7 +63,7 @@ include("functions.php");
             <button type="button">Confirm</button>
 
         </form>
-
+</div>
     </div>
 
 

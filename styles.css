@@ -70,13 +70,19 @@ body {
 }
 
 
-.content {
+.content4 {
     background-color: #656565;
     padding: 1%;
     margin-bottom: 3%;
     margin-top: 2%;
 }
 
-.form{
-
+.content5 {
+    background-color: #D2D1D1;
+    padding: 2%;
+    margin-bottom: 3%;
+    margin-top: 2%;
+    margin-left: 20%;
+    margin-right: 20%;
 }
+

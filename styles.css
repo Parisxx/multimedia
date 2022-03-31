@@ -22,14 +22,14 @@ body {
     background-color: #C11313;
     color: #FFFFFF;
     padding: 0.5%;
-    width: 200px;
     margin-top: -5%;
     margin-left: 1%;
     text-decoration: none;
 }
 
 .button:hover {
-    padding: 0.8%;
+    background-color: #e61919;
+    color: #ececec;
 }
 
 
@@ -38,7 +38,7 @@ body {
     padding: 1%;
     margin-top: 2%;
     margin-bottom: 3%;
-
+    
     overflow-x: scroll;
     display: flex;
 
@@ -58,6 +58,9 @@ body {
     background-color: #656565;
     padding: 1%;
     margin-bottom: 3%;
+
+    overflow-x: scroll;
+    display: flex;
     
 }
 
@@ -66,6 +69,9 @@ body {
     background-color: #656565;
     padding: 1%;
     margin-bottom: 3%;
+
+    overflow-x: scroll;
+    display: flex;
 
 }
 
@@ -102,8 +108,8 @@ body {
 }
 
 .button2:hover {
-   padding: 0.8%;
-   width: 120px;
+    background-color: #e61919;
+    color: #ececec;
 }
 
 
@@ -126,4 +132,18 @@ select{
 
 #link{
     width: 250px;
+}
+
+.button3 {
+    background-color: #C11313;
+    color: #FFFFFF;
+    padding: 0.8%;
+    margin-left: 1%;
+    width: 90px;
+    border: none;
+}
+
+.button3:hover {
+    background-color: #e61919;
+    color: #ececec;
 }

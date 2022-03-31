@@ -38,7 +38,7 @@ body {
     padding: 1%;
     margin-top: 2%;
     margin-bottom: 3%;
-    
+
     overflow-x: scroll;
     display: flex;
 
@@ -59,9 +59,9 @@ body {
     padding: 1%;
     margin-bottom: 3%;
 
-    /* overflow-x: scroll;
-    display: flex; */
-    
+    overflow-x: scroll;
+    display: flex; 
+
 }
 
 
@@ -117,12 +117,12 @@ input {
     border: none;
 }
 
-textarea{
+textarea {
     border: none;
     resize: none
 }
 
-select{
+select {
     border: none;
 }
 
@@ -130,7 +130,7 @@ select{
     height: 50px;
 }
 
-#link{
+#link {
     width: 250px;
 }
 
@@ -148,44 +148,55 @@ select{
     color: #ececec;
 }
 
-.radio_color{
+.radio_color {
     accent-color: #C11313;
 }
 
 /* sidescroll */
 
 
-img{border:none}
-#outer{
-    width:760px;
-    margin:auto;
+img {
+    border: none
 }
-ul{list-style:none;padding:5px;}
-.wrap {
-    border:5px solid #ccc;
-    width: 520px;
-    overflow: auto;
-    padding-bottom:14px;
+
+#outer {
+    width: 760px;
+    margin: auto;
 }
-.wrap li {
-    margin:0 10px;
-    display:inline;
+
+ul {
+    list-style: none;
+    padding: 5px;
 }
 
 .wrap {
-    border:5px solid #ccc;
+    /* border:5px solid #ccc; */
     width: 520px;
     overflow: auto;
-    padding-bottom:14px;
-    white-space:nowrap;
+    padding-bottom: 14px;
+}
+
+.wrap li {
+    margin: 0 10px;
+    display: inline;
+}
+
+.wrap {
+    /* border:5px solid #ccc; */
+    width: 520px;
+    overflow: auto;
+    padding-bottom: 14px;
+    white-space: nowrap;
 }
 
 .wrap::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .wrap {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
 }

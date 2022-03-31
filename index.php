@@ -53,77 +53,96 @@ include("functions.php");
             } else {
                 echo "<td>No</td>";
             }
-    
+            
             echo "</div>";
             echo "</li>";
+            
             }
             ?>
         </div>
     </div>
 
+    <div class="wrap">
     <div class="content2">
         <p class="text"> Films </p>
-        <?php
-           $sql = "SELECT * FROM watchlist WHERE media_type= '3'";
-           $result = $conn->query($sql);
-           while($row = $result->fetch(PDO::FETCH_ASSOC)){
-            $watched = $row['watched'];
+        
+            <?php
+            $sql = "SELECT * FROM watchlist WHERE media_type= '3'";
+            $result = $conn->query($sql);
+            while($row = $result->fetch(PDO::FETCH_ASSOC)){
+                $watched = $row['watched'];
 
-        echo "<div class='carts'>";
-        echo "<form method='post'>";
-        echo "<button formaction='edit.php' class='button3' name='edit' type='button'>Edit</button>";
-        echo "<button formaction='delete.php' class='button3' name='delete' type='button'>Delete</button>";
-        echo "</form>";
-        echo "<h1>" . $row['title'] . " - " . $row['maker'] . " </h1>";
-        echo "<h3>" . $row['platform'] . "</h3>";
-        echo "<p>" . $row['review'] . "</p>";
-        echo "<a target='_blank' href='" . $row['link'] ."'>";
-        echo "<img src='photos/" . $row['photo']."' height='200px' width='150px'>";
-        echo "</a>";
-        echo "<p> Seen: &nbsp";   
+            echo "<li>";
+            echo "<div class='carts'>";
+            echo "<form method='post'>";
+            echo "<button formaction='edit.php' class='button3' name='edit' type='button'>Edit</button>";
+            echo "<button formaction='delete.php' class='button3' name='delete' type='button'>Delete</button>";
+            echo "</form>";
 
-        if ($watched == "0"){
-            echo"<td>Yes</td>";
-        } else {
-            echo "<td>No</td>";
-        }
-        echo "</div>";
-        }
-        ?>
+            echo "<h1>" . $row['title'] . " - " . $row['maker'] . " </h1>";
+            echo "<h3>" . $row['platform'] . "</h3>";
+            echo "<p>" . $row['review'] . "</p>";
+            echo "<a target='_blank' href='" . $row['link'] ."'>";
+            echo "<img src='photos/" . $row['photo']."' height='200px' width='150px'>";
+            echo "</a>";
+            echo "<p> Listened: &nbsp";   
+            
+
+            if ($watched == "0"){
+                echo"<td>Yes</td>";
+            } else {
+                echo "<td>No</td>";
+            }
+            
+            echo "</div>";
+            echo "</li>";
+            
+            }
+            ?>
+        </div>
     </div>
 
 
-    
+    <div class="wrap">
     <div class="content3">
         <p class="text"> Books </p>
-        <?php
-           $sql = "SELECT * FROM watchlist WHERE media_type= '1'";
-           $result = $conn->query($sql);
-           while($row = $result->fetch(PDO::FETCH_ASSOC)){
-            $watched = $row['watched'];
+        
+            <?php
+            $sql = "SELECT * FROM watchlist WHERE media_type= '1'";
+            $result = $conn->query($sql);
+            while($row = $result->fetch(PDO::FETCH_ASSOC)){
+                $watched = $row['watched'];
 
-        echo "<div class='carts'>";
-        echo "<form method='post'>";
-        echo "<button formaction='edit.php' class='button3' name='edit' type='button'>Edit</button>";
-        echo "<button formaction='delete.php' class='button3' name='delete' type='button'>Delete</button>";
-        echo "</form>";
-        echo "<h1>" . $row['title'] . " - " . $row['maker'] . " </h1>";
-        echo "<h3>" . $row['platform'] . "</h3>";
-        echo "<p>" . $row['review'] . "</p>";
-        echo "<a target='_blank' href='" . $row['link'] ."'>";
-        echo "<img src='photos/" . $row['photo']."' height='200px' width='150px'>";
-        echo "</a>";
-        echo "<p> Read: &nbsp";   
+            echo "<li>";
+            echo "<div class='carts'>";
+            echo "<form method='post'>";
+            echo "<button formaction='edit.php' class='button3' name='edit' type='button'>Edit</button>";
+            echo "<button formaction='delete.php' class='button3' name='delete' type='button'>Delete</button>";
+            echo "</form>";
 
-        if ($watched == "0"){
-            echo"<td>Yes</td>";
-        } else {
-            echo "<td>No</td>";
-        }
-        echo "</div>";
-        }
-        ?>
+            echo "<h1>" . $row['title'] . " - " . $row['maker'] . " </h1>";
+            echo "<h3>" . $row['platform'] . "</h3>";
+            echo "<p>" . $row['review'] . "</p>";
+            echo "<a target='_blank' href='" . $row['link'] ."'>";
+            echo "<img src='photos/" . $row['photo']."' height='200px' width='150px'>";
+            echo "</a>";
+            echo "<p> Listened: &nbsp";   
+            
+
+            if ($watched == "0"){
+                echo"<td>Yes</td>";
+            } else {
+                echo "<td>No</td>";
+            }
+            
+            echo "</div>";
+            echo "</li>";
+            
+            }
+            ?>
+        </div>
     </div>
+
 
 
 </body>

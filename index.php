@@ -32,8 +32,11 @@ include("functions.php");
             $watched = $row['watched'];
 
         echo "<div class='carts'>";
+        echo "<form method='post'>";
         echo "<button formaction='edit.php' class='button3' name='edit' type='button'>Edit</button>";
         echo "<button formaction='delete.php' class='button3' name='delete' type='button'>Delete</button>";
+        echo "</form>";
+
         echo "<h1>" . $row['title'] . " - " . $row['maker'] . " </h1>";
         echo "<h3>" . $row['platform'] . "</h3>";
         echo "<p>" . $row['review'] . "</p>";
@@ -63,8 +66,10 @@ include("functions.php");
             $watched = $row['watched'];
 
         echo "<div class='carts'>";
+        echo "<form method='post'>";
         echo "<button formaction='edit.php' class='button3' name='edit' type='button'>Edit</button>";
         echo "<button formaction='delete.php' class='button3' name='delete' type='button'>Delete</button>";
+        echo "</form>";
         echo "<h1>" . $row['title'] . " - " . $row['maker'] . " </h1>";
         echo "<h3>" . $row['platform'] . "</h3>";
         echo "<p>" . $row['review'] . "</p>";
@@ -94,8 +99,10 @@ include("functions.php");
             $watched = $row['watched'];
 
         echo "<div class='carts'>";
+        echo "<form method='post'>";
         echo "<button formaction='edit.php' class='button3' name='edit' type='button'>Edit</button>";
         echo "<button formaction='delete.php' class='button3' name='delete' type='button'>Delete</button>";
+        echo "</form>";
         echo "<h1>" . $row['title'] . " - " . $row['maker'] . " </h1>";
         echo "<h3>" . $row['platform'] . "</h3>";
         echo "<p>" . $row['review'] . "</p>";

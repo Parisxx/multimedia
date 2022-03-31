@@ -57,8 +57,8 @@ include("functions.php");
             <br>
             <br>
             <label for="seen">Seen:</label>
-            <input type="radio" name="seen" value="0">Yes</input>
-            <input type="radio" name="seen" value="1">No</input>
+            <input class="radio_color" type="radio" name="seen" value="0">Yes</input>
+            <input class="radio_color" type="radio" name="seen" value="1">No</input>
             <br>
             <br>
             <button class="button2" name="confirm" type="button">Confirm</button>

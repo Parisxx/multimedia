@@ -147,3 +147,7 @@ select{
     background-color: #e61919;
     color: #ececec;
 }
+
+.radio_color{
+    accent-color: #C11313;
+}

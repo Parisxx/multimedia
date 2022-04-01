@@ -179,19 +179,19 @@ ul {
     display: inline;
 }
 
-.wrap {
+/* .wrap {
     /* border:5px solid #ccc; */
     width: 1500px;
     overflow: auto;
     padding-bottom: 14px;
     white-space: nowrap;
-}
+} */
 
 .wrap::-webkit-scrollbar {
     display: none;
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
+Hide scrollbar for IE, Edge and Firefox
 .wrap {
     -ms-overflow-style: none;
     /* IE and Edge */

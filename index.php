@@ -153,7 +153,6 @@ include("functions.php");
 
 <!-- 
 TO DO
--scroll bar
 -add page insert data with database and php
 -delete function
 -edit page update data with database and php 

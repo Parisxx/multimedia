@@ -1,6 +1,11 @@
 <?php
 session_start();
 include("functions.php");
+
+add($conn);
+
+
+
 ?>
 
 <!DOCTYPE html>
@@ -26,6 +31,7 @@ include("functions.php");
 
     <div class="content5">
         <h1>Add a book/film/song </h1>
+ 
         <form class="form" action="index.php" method="get">
             <label for="title">Title:</label>
             <input type="text" name="title" required autofocus>
@@ -38,16 +44,16 @@ include("functions.php");
             <br>
             <br>
             <label for="image">Image:</label>
-            <input type="file" name="image" accept="image/png, image/jpeg" required>
+            <input type="file" name="image" accept="image/png, image/jpeg" > <!-- Required -->
             <label for="link">Link to media:</label>
             <input id="link" type="url" name="link">
             <br>
             <br>
             <label for="media"> Which media:</label>
             <select name="media" required>
-                <option value="book">Book</option>
-                <option value="song">Song</option>
-                <option value="film">Film</option>
+                <option value="1">Book</option>
+                <option value="2">Song</option>
+                <option value="3">Film</option>
             </select>
             <br>
             <br>
@@ -65,6 +71,9 @@ include("functions.php");
             
 
         </form>
+
+
+
 </div>
     </div>
 

@@ -1,7 +1,15 @@
 <?php
 session_start();
 include("functions.php");
+
+
+if(isset($_POST['carts_id'])) {
+    delete($conn);
+}
+
 ?>
+
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -31,12 +39,11 @@ include("functions.php");
             $result = $conn->query($sql);
             while($row = $result->fetch(PDO::FETCH_ASSOC)){
                 $watched = $row['watched'];
-
             echo "<li>";
             echo "<div class='carts'>";
-            echo "<form method='post'>";
-            echo "<button formaction='edit.php' class='button3' name='edit' type='button'>Edit</button>";
-            echo "<button formaction='delete.php' class='button3' name='delete' type='button'>Delete</button>";
+            echo "<form action='' method='post'>";
+            echo "<button  value='" . $row['id'] . "' formaction='edit.php' class='button3' name='edit' type='submit'>Edit</button>";
+            echo "<button  value='" . $row['id'] . "' formaction='' class='button3' name='carts_id' type='submit'>Delete</button>";
             echo "</form>";
 
             echo "<h1>" . $row['title'] . " - " . $row['maker'] . " </h1>";
@@ -74,9 +81,9 @@ include("functions.php");
 
             echo "<li>";
             echo "<div class='carts'>";
-            echo "<form method='post'>";
-            echo "<button formaction='edit.php' class='button3' name='edit' type='button'>Edit</button>";
-            echo "<button formaction='delete.php' class='button3' name='delete' type='button'>Delete</button>";
+            echo "<form action='' method='post'>";
+            echo "<button  value='" . $row['id'] . "' formaction='edit.php' class='button3' name='edit' type='submit'>Edit</button>";
+            echo "<button  value='" . $row['id'] . "' formaction='' class='button3' name='carts_id' type='submit'>Delete</button>";
             echo "</form>";
 
             echo "<h1>" . $row['title'] . " - " . $row['maker'] . " </h1>";
@@ -115,9 +122,9 @@ include("functions.php");
 
             echo "<li>";
             echo "<div class='carts'>";
-            echo "<form method='post'>";
-            echo "<button formaction='edit.php' class='button3' name='edit' type='button'>Edit</button>";
-            echo "<button formaction='delete.php' class='button3' name='delete' type='button'>Delete</button>";
+            echo "<form action='' method='post'>";
+            echo "<button value='" . $row['id'] . "' formaction='edit.php' class='button3' name='edit' type='submit'>Edit</button>";
+            echo "<button value='" . $row['id'] . "' formaction='' class='button3' name='carts_id' type='submit'>Delete</button>";
             echo "</form>";
 
             echo "<h1>" . $row['title'] . " - " . $row['maker'] . " </h1>";
@@ -154,6 +161,5 @@ include("functions.php");
 <!-- 
 TO DO
 -add page insert data with database and php
--delete function
 -edit page update data with database and php 
 -->

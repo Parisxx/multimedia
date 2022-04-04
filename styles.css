@@ -155,46 +155,17 @@ select {
 
 
 
-/* sidescroll */
-
-
-/*img {
-    border: none
-}*/
-
-#outer {
-    width: 760px;
-    margin: auto;
-}
-
-ul {
-    list-style: none;
-    padding: 5px;
-}
-
-
-
 .wrap li {
     margin: 0 20px;
     display: inline;
 }
 
-/* .wrap {
-    /* border:5px solid #ccc; */
-    width: 1500px;
-    overflow: auto;
-    padding-bottom: 14px;
-    white-space: nowrap;
-} */
 
 .wrap::-webkit-scrollbar {
     display: none;
 }
 
-Hide scrollbar for IE, Edge and Firefox
 .wrap {
     -ms-overflow-style: none;
-    /* IE and Edge */
     scrollbar-width: none;
-    /* Firefox */
-}
+} 

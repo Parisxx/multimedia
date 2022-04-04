@@ -51,14 +51,14 @@ include("functions.php");
             </select>
             <br>
             <br>
-            <label for="review">Review:</label>
+            <label maxlength="80" for="review">Review:</label>
             <br>
             <textarea name="review" cols="40" rows="5" required></textarea>
             <br>
             <br>
             <label for="seen">Seen:</label>
-            <input class="radio_color" type="radio" name="seen" value="0">Yes</input>
-            <input class="radio_color" type="radio" name="seen" value="1">No</input>
+            <input required class="radio_color" type="radio" name="seen" value="0">Yes</input>
+            <input required class="radio_color" type="radio" name="seen" value="1">No</input>
             <br>
             <br>
             <button class="button2" name="confirm" type="button">Confirm</button>

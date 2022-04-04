@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 31 mrt 2022 om 10:08
--- Serverversie: 10.4.21-MariaDB
--- PHP-versie: 8.0.10
+-- Gegenereerd op: 04 apr 2022 om 13:20
+-- Serverversie: 10.4.22-MariaDB
+-- PHP-versie: 8.1.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -78,7 +78,13 @@ INSERT INTO `watchlist` (`id`, `title`, `maker`, `media_type`, `platform`, `watc
 (12, 'De Moordclub', 'Richard Osman', 1, 'Google books', 0, 'moordclub.png', '', 'Ik vond dit een leuk boek.'),
 (13, 'The Alchemist', 'Paulo Coelho', 1, 'Google Books', 0, 'alchemist.png', '', 'Ik vond dit een goed boek.'),
 (14, 'Dragon World', 'Geraldine Allie', 1, 'Google Books', 0, 'dragonworld.png', '', 'Ik vond dit een leuk boek.'),
-(15, 'Citizen Emperor', 'Philip Dwyer', 1, 'Google Books', 0, 'emporer.png', '', 'Ik vond dit een oke boek.');
+(15, 'Citizen Emperor', 'Philip Dwyer', 1, 'Google Books', 0, 'emporer.png', '', 'Ik vond dit een oke boek.'),
+(16, 'Iron Lion Zion', 'Bob Marley & The Wailers', 2, 'spotify', 0, 'iron.png', '', 'Erg mooi nummer 10/10.'),
+(17, 'Dreadlock Holiday', '10cc', 2, 'Spotify', 0, 'dreadlock.png', '', 'ik hou van dit nummer'),
+(18, 'Archer', 'Adam Reed', 3, 'Netflix', 0, 'Archer.png', '', 'een van mijn favoriete series'),
+(19, 'true blood', 'Alan Ball', 3, 'Netflix', 0, 'trueblood.png', '', 'het is een erg leuke serie'),
+(20, 'Boy', 'Roald Dahl', 1, 'google books', 1, 'boy.png', '', 'ik heb dit boek nog niet gelezen'),
+(21, 'Gramma', 'Stephen King', 1, 'google books', 1, 'gramma.png', '', 'ik heb em nog niet gelezen');
 
 --
 -- Indexen voor geëxporteerde tabellen
@@ -110,7 +116,7 @@ ALTER TABLE `media_type`
 -- AUTO_INCREMENT voor een tabel `watchlist`
 --
 ALTER TABLE `watchlist`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -26,7 +26,7 @@ include("functions.php");
 
     <div class="content5">
         <h1>Add a book/film/song </h1>
-        <form class="form" action="/add.php" method="get">
+        <form class="form" action="index.php" method="get">
             <label for="title">Title:</label>
             <input type="text" name="title" required autofocus>
             <label for="maker">Maker:</label>
@@ -61,8 +61,8 @@ include("functions.php");
             <input required class="radio_color" type="radio" name="seen" value="1">No</input>
             <br>
             <br>
-            <button class="button2" name="confirm" type="button">Confirm</button>
-           
+            <button class="button2" name="confirm" type="submit">Confirm</button>
+            
 
         </form>
 </div>

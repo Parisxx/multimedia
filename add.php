@@ -4,8 +4,6 @@ include("functions.php");
 
 add($conn);
 
-
-
 ?>
 
 <!DOCTYPE html>
@@ -32,7 +30,7 @@ add($conn);
     <div class="content5">
         <h1>Add a book/film/song </h1>
  
-        <form class="form" action="index.php" method="get">
+        <form class="form" action="" method="get">
             <label for="title">Title:</label>
             <input type="text" name="title" required autofocus>
             <label for="maker">Maker:</label>
@@ -67,7 +65,7 @@ add($conn);
             <input required class="radio_color" type="radio" name="seen" value="1">No</input>
             <br>
             <br>
-            <button class="button2" name="confirm" type="submit">Confirm</button>
+            <button class="button2" type="submit">Confirm</button>
             
 
         </form>

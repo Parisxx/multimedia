@@ -42,7 +42,7 @@ if(isset($_POST['carts_id'])) {
             echo "<li>";
             echo "<div class='carts'>";
             echo "<form action='' method='post'>";
-            echo "<button  value='" . $row['id'] . "' formaction='edit.php' class='button3' name='edit' type='submit'>Edit</button>";
+            echo "<button  value='" . $row['id'] . "' formaction='edit.php?id=". $row['id'] ."' class='button3' name='edit' type='submit'>Edit</button>";
             echo "<button  value='" . $row['id'] . "' formaction='' class='button3' name='carts_id' type='submit'>Delete</button>";
             echo "</form>";
 
@@ -50,7 +50,7 @@ if(isset($_POST['carts_id'])) {
             echo "<h3>" . $row['platform'] . "</h3>";
             echo "<p>" . $row['review'] . "</p>";
             echo "<a target='_blank' href='" . $row['link'] ."'>";
-            echo "<img src='photos/" . $row['photo']."' height='200px' width='200px'>";
+            echo "<img src='photos/" . $row['photo']."' height='200px' width='200px'>"; 
             echo "</a>";
             echo "<p> Listened: &nbsp";   
             
@@ -82,7 +82,7 @@ if(isset($_POST['carts_id'])) {
             echo "<li>";
             echo "<div class='carts'>";
             echo "<form action='' method='post'>";
-            echo "<button  value='" . $row['id'] . "' formaction='edit.php' class='button3' name='edit' type='submit'>Edit</button>";
+            echo "<button  value='" . $row['id'] . "' formaction='edit.php?id=". $row['id'] ."' class='button3' name='edit' type='submit'>Edit</button>";
             echo "<button  value='" . $row['id'] . "' formaction='' class='button3' name='carts_id' type='submit'>Delete</button>";
             echo "</form>";
 
@@ -92,7 +92,7 @@ if(isset($_POST['carts_id'])) {
             echo "<a target='_blank' href='" . $row['link'] ."'>";
             echo "<img src='photos/" . $row['photo']."' height='200px' width='150px'>";
             echo "</a>";
-            echo "<p> Listened: &nbsp";   
+            echo "<p> Watched: &nbsp";   
             
 
             if ($watched == "0"){
@@ -123,7 +123,7 @@ if(isset($_POST['carts_id'])) {
             echo "<li>";
             echo "<div class='carts'>";
             echo "<form action='' method='post'>";
-            echo "<button value='" . $row['id'] . "' formaction='edit.php' class='button3' name='edit' type='submit'>Edit</button>";
+            echo "<button value='" . $row['id'] . "' formaction='edit.php?id=". $row['id'] ."'  class='button3' name='edit' type='submit'>Edit</button>";
             echo "<button value='" . $row['id'] . "' formaction='' class='button3' name='carts_id' type='submit'>Delete</button>";
             echo "</form>";
 
@@ -133,7 +133,7 @@ if(isset($_POST['carts_id'])) {
             echo "<a target='_blank' href='" . $row['link'] ."'>";
             echo "<img src='photos/" . $row['photo']."' height='200px' width='150px'>";
             echo "</a>";
-            echo "<p> Listened: &nbsp";   
+            echo "<p> Read: &nbsp";   
             
 
             if ($watched == "0"){

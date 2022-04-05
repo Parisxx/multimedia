@@ -3,7 +3,7 @@ session_start();
 include("functions.php");
 
 add($conn);
-
+// file($conn);
 ?>
 
 <!DOCTYPE html>
@@ -30,7 +30,7 @@ add($conn);
     <div class="content5">
         <h1>Add a book/film/song </h1>
  
-        <form class="form" action="" method="get">
+        <form class="form" action="add.php" method="post" enctype="multipart/form-data">
             <label for="title">Title:</label>
             <input type="text" name="title" required autofocus>
             <label for="maker">Maker:</label>
@@ -38,11 +38,13 @@ add($conn);
             <br>
             <br>
             <label for="company">Company:</label>
-            <input type="text" name="company" required>
+            <input type="text" name="platform" required>
             <br>
             <br>
+
             <label for="image">Image:</label>
-            <input type="file" name="image" accept="image/png, image/jpeg" > <!-- Required -->
+            <input target="_self" formaction="upload.php" type="file" name="file">
+
             <label for="link">Link to media:</label>
             <input id="link" type="url" name="link">
             <br>
@@ -61,11 +63,11 @@ add($conn);
             <br>
             <br>
             <label for="seen">Seen:</label>
-            <input required class="radio_color" type="radio" name="seen" value="0">Yes</input>
-            <input required class="radio_color" type="radio" name="seen" value="1">No</input>
+            <input required class="radio_color" type="radio" name="watched" value="0">Yes</input> 
+            <input required class="radio_color" type="radio" name="watched" value="1">No</input>
             <br>
             <br>
-            <button class="button2" type="submit">Confirm</button>
+            <button class="button2" name="submit" type="submit">Confirm</button>
             
 
         </form>

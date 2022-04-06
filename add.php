@@ -3,7 +3,6 @@ session_start();
 include("functions.php");
 
 add($conn);
-// file($conn);
 ?>
 
 <!DOCTYPE html>

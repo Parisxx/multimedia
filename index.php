@@ -50,7 +50,7 @@ if(isset($_POST['carts_id'])) {
             echo "<h3>" . $row['platform'] . "</h3>";
             echo "<p>" . $row['review'] . "</p>";
             echo "<a target='_blank' href='" . $row['link'] ."'>";
-            echo "<img src='photos/" . $row['photo']."' height='200px' width='200px'>"; 
+            echo "<img src='uploads/" . $row['photo']."' height='200px' width='200px'>"; 
             echo "</a>";
             echo "<p> Listened: &nbsp";   
             
@@ -90,7 +90,7 @@ if(isset($_POST['carts_id'])) {
             echo "<h3>" . $row['platform'] . "</h3>";
             echo "<p>" . $row['review'] . "</p>";
             echo "<a target='_blank' href='" . $row['link'] ."'>";
-            echo "<img src='photos/" . $row['photo']."' height='200px' width='150px'>";
+            echo "<img src='uploads/" . $row['photo']."' height='200px' width='150px'>";
             echo "</a>";
             echo "<p> Watched: &nbsp";   
             
@@ -131,7 +131,7 @@ if(isset($_POST['carts_id'])) {
             echo "<h3>" . $row['platform'] . "</h3>";
             echo "<p>" . $row['review'] . "</p>";
             echo "<a target='_blank' href='" . $row['link'] ."'>";
-            echo "<img src='photos/" . $row['photo']."' height='200px' width='150px'>";
+            echo "<img src='uploads/" . $row['photo']."' height='200px' width='150px'>";
             echo "</a>";
             echo "<p> Read: &nbsp";   
             
@@ -160,6 +160,6 @@ if(isset($_POST['carts_id'])) {
 
 <!-- 
 TO DO
--add page insert data with database and php
+-insert file into database
 -edit page update data with database and php 
 -->

@@ -32,3 +32,5 @@ if(isset($_POST["submit"]) && !empty($_FILES["file"]["name"])){
 
 
 echo $statusMsg;
+
+

@@ -28,7 +28,7 @@ edit($conn);
 
     <div class="content5">
         <h1>Edit the book/song/film </h1>
-        <form class="form" action="edit.php" method="post">
+        <form class="form" action="add.php" method="post" enctype="multipart/form-data">
             <label for="title">Title:</label>
             <input type="text" name="title" required autofocus>
             <label for="maker">Maker:</label>
@@ -40,7 +40,8 @@ edit($conn);
             <br>
             <br>
             <label for="image">Image:</label>
-            <input type="file" name="image" accept="image/png, image/jpeg"> <!-- edit -->
+            <input target="_self" formaction="upload.php" type="file" name="file">
+
             <label for="link">Link to media:</label>
             <input id="link" type="url" name="link">
             <br>

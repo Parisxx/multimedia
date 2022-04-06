@@ -34,9 +34,9 @@ if(isset($_POST['carts_id'])) {
     <p class="text" id="time"></p>
 
     <div class="wrap">
-    <div class="content1">
-        <p class="text"> Songs </p>
-        
+        <div class="content1">
+            <p class="text"> Songs </p>
+
             <?php
             $sql = "SELECT * FROM watchlist WHERE media_type= '2'";
             $result = $conn->query($sql);
@@ -73,9 +73,9 @@ if(isset($_POST['carts_id'])) {
     </div>
 
     <div class="wrap">
-    <div class="content2">
-        <p class="text"> Films </p>
-        
+        <div class="content2">
+            <p class="text"> Films </p>
+
             <?php
             $sql = "SELECT * FROM watchlist WHERE media_type= '3'";
             $result = $conn->query($sql);
@@ -114,9 +114,9 @@ if(isset($_POST['carts_id'])) {
 
 
     <div class="wrap">
-    <div class="content3">
-        <p class="text"> Books </p>
-        
+        <div class="content3">
+            <p class="text"> Books </p>
+
             <?php
             $sql = "SELECT * FROM watchlist WHERE media_type= '1'";
             $result = $conn->query($sql);
@@ -153,7 +153,7 @@ if(isset($_POST['carts_id'])) {
         </div>
     </div>
 
-
+    <p class="copy"> &copy Paris Stassen and Robin Reinders
 
 </body>
 

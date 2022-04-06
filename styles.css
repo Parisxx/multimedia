@@ -62,7 +62,7 @@ body {
     margin-bottom: 3%;
 
     overflow-x: scroll;
-    display: flex; 
+    display: flex;
 
 }
 
@@ -169,6 +169,10 @@ select {
 .wrap {
     -ms-overflow-style: none;
     scrollbar-width: none;
-} 
+}
 
 
+.copy {
+    color: #FFFFFF;
+    text-align: center;
+}

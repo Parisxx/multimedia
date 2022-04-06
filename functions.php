@@ -44,7 +44,3 @@ function edit($conn){
         $result = $conn->query($sql);
     }
 }
-
-
-
-

@@ -30,6 +30,9 @@ if(isset($_POST['carts_id'])) {
 
     <a href="add.php" class="button"> Add </a>
 
+    <button class="button" onclick="document.getElementById('time').innerHTML=Date()">The time is?</button>
+    <p class="text" id="time"></p>
+
     <div class="wrap">
     <div class="content1">
         <p class="text"> Songs </p>

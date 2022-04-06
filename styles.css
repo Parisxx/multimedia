@@ -25,6 +25,7 @@ body {
     margin-top: -5%;
     margin-left: 1%;
     text-decoration: none;
+    border: none;
 }
 
 .button:hover {
@@ -169,3 +170,5 @@ select {
     -ms-overflow-style: none;
     scrollbar-width: none;
 } 
+
+
